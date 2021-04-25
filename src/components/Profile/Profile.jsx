@@ -1,17 +1,16 @@
 import React from "react";
 import styles from "./Profile.module.css";
 import MyPost from "./MyPosts/MyPost";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
 const Profile = () => {
-    return <div>
+    return (
         <div>
-            <img src='https://telecomdom.com/wp-content/uploads/2019/12/shapka_for_youtube-fon-7.jpg' />
+            <ProfileInfo />
+            <MyPost />
         </div>
-        <div>
-            ava
-        </div>
-        <MyPost />
-    </div>
+    )
+
 }
 
 export default Profile

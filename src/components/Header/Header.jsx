@@ -3,7 +3,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
     return <header className={styles.header}>
-        <img src='https://api.freelogodesign.org/assets/thumb/logo/21888881_400.png' />
+        <img src='https://cdn1.savepice.ru/uploads/2021/4/25/29fe9981c6ad7e802b3db9f018b60ee0-full.jpg' alt='logo' />
     </header>
 }
 
