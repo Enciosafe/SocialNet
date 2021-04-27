@@ -11,16 +11,19 @@ import './App.css';
 
 
 
-const App = () => {
-  return (
+
+
+const App = (props) => {
+
+    return (
       <BrowserRouter>
           <div className='app-wrapper'>
               <Header />
               <Nav />
 
               <div className='app-wrapper-content'>
-                  <Route path='/dialogs' component={Dialogs} />
-                  <Route path='/profile' component={Profile} />
+                  <Route path='/dialogs' render={ () => <Dialogs messagesData={props.messagesData} userData={props.userData}/>} />
+                  <Route path='/profile' render={ () => <Profile postData={props.postData} />} />
                   <Route path='/news' component={News} />
                   <Route path='/music' component={Music} />
                   <Route path='/settings' component={Settings} />
