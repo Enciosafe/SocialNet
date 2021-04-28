@@ -5,13 +5,24 @@ import styles from "./MyPost.module.css"
 
 
 const MyPost = (props) => {
+
+    let newPostElement = React.createRef();
+
+    let addPost = () => {
+        let text = newPostElement.current.value;
+        alert(text)
+
+    }
+
     return (
     <div className={styles.postsBlock}>
         <div>
             <h3>My post</h3>
             <div>
-                <textarea></textarea>
-                <div><button>Add post</button></div>
+                <textarea ref={newPostElement}></textarea>
+                <div>
+                    <button onClick={addPost}>Add post</button>
+                </div>
             </div>
         </div>
 
