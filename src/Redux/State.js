@@ -36,11 +36,7 @@ let state = {
         friendsList: [
             {id: '1', name: 'John'},
             {id: '2', name: 'Smith'},
-            {id: '3', name: 'Valery'},
-            {id: '4', name: 'Viktor'},
-            {id: '5', name: 'Monika'},
-            {id: '6', name: 'Alexey'},
-            {id: '7', name: 'Kirill'}
+            {id: '3', name: 'Valery'}
         ]
     }
 }
