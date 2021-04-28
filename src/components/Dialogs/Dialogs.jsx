@@ -12,11 +12,14 @@ const Dialogs = (props) => {
     return (
         <div className={styles.dialogs}>
             <div className={styles.dialogsItems}>
-                {props.userData.map(user => <DialogItem name={user.name} id={user.id}/>)}
+                {props.state.userData.map(user => <DialogItem name={user.name} id={user.id}/>)}
             </div>
             <div className={styles.messages}>
-                {props.messagesData.map(message => <Message message={message.message}/> )}
+                {props.state.messagesData.map(message => <Message message={message.message}/> )}
             </div>
+
+            <textarea></textarea><button>talk</button>
+
         </div>
 
     )
