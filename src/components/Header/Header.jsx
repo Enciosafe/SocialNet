@@ -4,7 +4,7 @@ import styles from "./Header.module.css";
 
 const Header = () => {
     return <header className={styles.header}>
-        <img src="imgonline-com-ua-Resize-aN39ch47eUSydMD.jpg" alt='logo' />
+        <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt='logo' />
     </header>
 }
 
