@@ -9,7 +9,7 @@ import {addPost, updateNewPostText} from "./Redux/state";
 
 
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = () => {
     ReactDOM.render(
         <BrowserRouter>
             <React.StrictMode>
@@ -18,10 +18,9 @@ let rerenderEntireTree = (state) => {
         </BrowserRouter>,document.getElementById('root')
     );
 }
-
 rerenderEntireTree(state)
 
-subscribe(rerenderEntireTree);
+subscribe(rerenderEntireTree)
 
 
 

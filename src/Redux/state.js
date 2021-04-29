@@ -1,7 +1,6 @@
 let rerenderEntireTree = () => {
-    console.log('State changed')
+    console.log('Лажа')
 }
-
 
 let state = {
     profilePage: {
@@ -47,7 +46,7 @@ let state = {
     }
 }
 
-export const addPost = () => {
+export const addPost = (postMessage) => {
     let newPost = {
         id: state.profilePage.postData.length + 1,
         message: state.profilePage.newPostText,
@@ -55,7 +54,7 @@ export const addPost = () => {
     };
     state.profilePage.postData.push(newPost)
     state.profilePage.newPostText = '';
-    rerenderEntireTree();
+    rerenderEntireTree(state);
 
 }
 
@@ -64,9 +63,10 @@ export const updateNewPostText = (newText) => {
     rerenderEntireTree(state);
 }
 
-export const  subscribe = (observer) => {
-  rerenderEntireTree = observer;
+export const subscribe = (observer) => {
+ rerenderEntireTree = observer;
 }
+
 
 export default state
 
