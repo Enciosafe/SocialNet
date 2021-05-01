@@ -1,6 +1,6 @@
 .listContainer {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
 
     font-size: 11px;
 
