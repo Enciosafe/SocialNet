@@ -7,7 +7,6 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import Settings from "./components/Settings/Settings";
 import './App.css';
-import Friends from "./components/Friends/Friends";
 import {Route} from "react-router-dom";
 
 
@@ -15,17 +14,15 @@ import {Route} from "react-router-dom";
 
 
 const App = (props) => {
-
     return (
         <div className='app-wrapper'>
               <Header />
-              <Nav state={props.state} />
+              <Nav/>
 
               <div className='app-wrapper-content'>
                   <Route path='/dialogs' render={ () => <Dialogs store={props.store}/>} />
                   <Route path='/profile' render={ () => <Profile profilePage={props.state.profilePage}
                                                                  dispatch={props.dispatch}/>} />
-                  <Route path='/friends' render={ () => <Friends state={props.state.friendsBar} />} />
                   <Route path='/news' component={News} />
                   <Route path='/music' component={Music} />
                   <Route path='/settings' component={Settings} />
