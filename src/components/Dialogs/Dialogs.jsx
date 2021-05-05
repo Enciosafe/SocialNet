@@ -12,8 +12,8 @@ const Dialogs = (props) => {
 
     let state = props.dialogsPage;
 
-    let dialogsElements = state.userData.map(user => <DialogItem name={user.name} id={user.id}/>)
-    let messagesElements = state.messagesData.map(message => <Message message={message.message}/> )
+    let dialogsElements = state.userData.map(user => <DialogItem name={user.name} key={user.id} id={user.id}/>)
+    let messagesElements = state.messagesData.map(message => <Message message={message.message} key={message.id}/> )
     let newMessageBody = state.newMessageBody
 
     let onSendMessageClick = () => {
