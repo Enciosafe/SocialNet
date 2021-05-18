@@ -7,3 +7,11 @@
     padding-left: 20px;
     width: 70px;
 }
+
+.loginBlock {
+    float: right;
+}
+
+.loginBlock a {
+    color: darkolivegreen;
+}
